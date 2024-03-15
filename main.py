@@ -51,8 +51,8 @@ def clearOut():
 
 def open_info():
     try:
-        #showinfo(title="Инструкция", message=f'''''')
-        os.startfile(os.path.relpath('README.txt'))
+        # showinfo(title="Инструкция", message=f'''''')
+        os.startfile(os.path.relpath('README.md'))
     except Exception as e:
         messagebox.showerror("Error!", str(e))
 
@@ -117,7 +117,6 @@ if __name__ == "__main__":
     window.wm_attributes("-topmost")
     window.geometry('700x400')
     window["bg"] = "#15161a"
-
 
     Text_Dir_Enter_Button = tk.Button(window, text="ДОБАВИТЬ ТЕКСТЫ ИЗ ПАПКИ", command=texts_from_dir, width="40",
                                       height="4",
